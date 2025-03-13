@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --yellow: #F4D04E;
+  --gray-950: #111111;
+  --gray-500: #6B6B6B;
+
+  --main-font: "Figtree", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--yellow);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-1 {
+  font-family: var(--main-font);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.text-2 {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 150%;
+}
+
+.text-3 {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.blog-card {
+  margin: auto;
+  background-color: white;
+  width: 384px;
+  height: 522px;
+  border-radius: 20px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  box-shadow: 8px 8px var(--gray-950);
+  border: 1px solid black;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  box-shadow: 16px 16px var(--gray-950);
+
+  .article-title {
+    animation: name duration timing-function delay iteration-count direction
+      fill-mode;
+    color: var(--yellow);
+  }
+}
+
+.blog-img {
+  border-radius: 10px;
+  width: fit-content;
+  height: 200px;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+
+  height: 194px;
+  width: 336;
+  row-gap: 12px;
+}
+
+.article-category {
+  width: 82px;
+  height: 29px;
+  background-color: var(--yellow);
+  border-radius: 4px;
+  align-content: center;
+  text-align: center;
+  padding: 4px 12px 4px 12px;
+  font-weight: 1000;
+
+  display: table;
+  column-gap: 8px;
+}
+
+.publish-date {
+  width: 143px;
+  height: 21px;
+}
+
+.article-title {
+  width: 336px;
+  height: 36px;
+  color: var(--gray-950);
+  transition: color 0.3s ease-in-out;
+}
+
+.article-description {
+  width: 336px;
+  height: 72px;
+}
+
+.author-container {
+  display: flex;
+  height: 32px;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar-img {
+  border-image: round;
+  height: 32px;
+  width: 32px;
+}
+
+.author-name {
+  font-weight: bolder;
+  width: 85px;
+  height: 21px;
+}
